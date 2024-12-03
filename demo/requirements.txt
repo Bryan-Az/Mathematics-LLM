@@ -1,4 +1,11 @@
+# Core dependencies
 gradio>=4.0.0
 torch>=2.0.0
 transformers>=4.30.0
 accelerate>=0.20.0
+numpy>=1.21.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
