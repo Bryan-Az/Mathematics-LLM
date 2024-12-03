@@ -14,4 +14,8 @@ quantized model: https://huggingface.co/Alexis-Az/Math-Problem-LlaMA-3.2-1.7B-GG
 
 quantized model: https://huggingface.co/Alexis-Az/Math-Problem-LlaMA-3.2-1B-GGUF
 
+### Evaluation Dataset
+
+Evaluations for Both Models: https://huggingface.co/datasets/Alexis-Az/Math-LLM-Evaluations
+
 
