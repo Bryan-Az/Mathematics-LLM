@@ -3,9 +3,9 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel
 
-# Model configuration
-BASE_MODEL = "HuggingFaceTB/SmolLM2-1.7B-Instruct"  # Base model
-ADAPTER_MODEL = "Joash2024/Math-SmolLM2-1.7B"       # Our fine-tuned adapter
+# Model configurations
+BASE_MODEL = "meta-llama/Llama-3.2-1B"  # Original LLaMA model
+OUR_ADAPTER = "Joash2024/Math-SmolLM2-1.7B"  # Our LoRA adapter
 
 # Configure quantization
 bnb_config = BitsAndBytesConfig(
@@ -13,10 +13,12 @@ bnb_config = BitsAndBytesConfig(
 )
 
 # Load tokenizer
+print("Loading tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
 tokenizer.pad_token = tokenizer.eos_token
 
-# Load base model
+# Load base model and adapter
+print("Loading model...")
 model = AutoModelForCausalLM.from_pretrained(
     BASE_MODEL,
     quantization_config=bnb_config,
@@ -24,8 +26,8 @@ model = AutoModelForCausalLM.from_pretrained(
     torch_dtype=torch.float16
 )
 
-# Load LoRA adapter
-model = PeftModel.from_pretrained(model, ADAPTER_MODEL)
+print("Loading LoRA adapter...")
+model = PeftModel.from_pretrained(model, OUR_ADAPTER)
 model.eval()
 
 def format_prompt(operation: str, problem: str) -> str:
