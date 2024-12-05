@@ -4,8 +4,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel
 
 # Model configurations
-BASE_MODEL = "meta-llama/Llama-3.2-1B"  # Original LLaMA model
-OUR_ADAPTER = "Joash2024/Math-SmolLM2-1.7B"  # Our LoRA adapter
+BASE_MODEL = "Alexis-Az/Math-Problem-LlaMA-3.2-1B"  # Public LLaMA model
+OUR_ADAPTER = "Joash2024/Math-SmolLM2-1.7B"        # Our LoRA adapter
 
 # Configure quantization
 bnb_config = BitsAndBytesConfig(
