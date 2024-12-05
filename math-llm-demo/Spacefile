@@ -1,0 +1,24 @@
+# Spacefile for math-llm-demo
+configuration:
+  name: math-llm-demo
+  organization: Joash2024
+  hardware:
+    cpu: 2
+    memory: 16
+  system:
+    python_version: "3.10"
+
+sdk: gradio
+sdk_version: 4.0.0
+python_packages:
+  - "torch>=2.0.0"
+  - "transformers>=4.30.0"
+  - "accelerate>=0.20.0"
+  - "numpy>=1.21.0"
+
+app_file: app.py
+app_port: 7860
+
+models:
+  - "Alexis-Az/Math-Problem-LlaMA-3.2-1B-GGUF"
+  - "Alexis-Az/Math-Problem-LlaMA-3.2-1.7B-GGUF"
