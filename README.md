@@ -1,6 +1,9 @@
 # Mathematics-LLM
-This is a brief group project where we train and benchmark a LLM on it's ability to respond accurately to math problems.
+This is a brief group project where we train and benchmark a LLM on it's ability to respond accurately to math problems. <br>
 **Key Words** LLMOps, GenAI, SmolLM2, LLama, Mathematics, Problem Solving, LLMs
+<br>
+[Project Report](https://github.com/Bryan-Az/Mathematics-LLM/blob/model_eval/Enhancing%20LLMs'%20Capabilities%20in%20Solving%20Math%20Problems_%20LLM-OPS%20GenAI%20Application.pdf)
+
 ## Abstract
 Large language models (LLMs) like GPT-3 excel in generating and understanding text but encounter significant limitations when dealing with tasks that require precise logical reasoning or numerical analysis, such as solving mathematical problems. These models often struggle with symbolic manipulation and can misinterpret the specific requirements of math-related queries due to their design focusing on linguistic, rather than numerical, understanding. The goal of our project is to deliver a full LLM-OPs pipeline and train, evaluate repective LLMs to respond to math problems in a numerical/LaTex output. 
 
