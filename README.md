@@ -1,6 +1,8 @@
 # Mathematics-LLM
 This is a brief group project where we train and benchmark a LLM on it's ability to respond accurately to math problems.
 
+## Abstract
+
 ## HuggingFace Links
 
 ### Finetuning Education/Math HuggingFaceTB SmolLM2 1.7B Parameter Model
