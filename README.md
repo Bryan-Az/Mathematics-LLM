@@ -1,6 +1,8 @@
 # Mathematics-LLM
 This is a brief group project where we train and benchmark a LLM on it's ability to respond accurately to math problems.
 
+## Abstract
+Large language models (LLMs) like GPT-3 excel in generating and understanding text but encounter significant limitations when dealing with tasks that require precise logical reasoning or numerical analysis, such as solving mathematical problems. These models often struggle with symbolic manipulation and can misinterpret the specific requirements of math-related queries due to their design focusing on linguistic, rather than numerical, understanding. The goal of our project is to deliver a full LLM-OPs pipeline and train, evaluate repective LLMs to respond to math problems in a numerical/LaTex output. 
 ## HuggingFace Links
 
 ### Finetuning Education/Math HuggingFaceTB SmolLM2 1.7B Parameter Model
